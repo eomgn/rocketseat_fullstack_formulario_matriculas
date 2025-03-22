@@ -1,7 +1,8 @@
 /* css aplicado ao input do tipo file onde deverá ter uma dropzone com imagem e definidicoes de clique, foco e hover */
 
 .dropzone {
-  border: 0.0625rem dashed var(--stroke-default);
+  border: 2px dashed transparent;
+  outline: 0.0625rem dashed var(--stroke-default);
   border-radius: 0.25rem;
 
   display: grid;
@@ -28,7 +29,7 @@
 
   &:hover,
   &:has(input:focus) {
-    border-width: 2px;
+    outline-width: 0;
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
