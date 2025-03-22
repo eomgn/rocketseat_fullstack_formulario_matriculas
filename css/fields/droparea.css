@@ -1,3 +1,5 @@
+/* css aplicado ao input do tipo file onde deverá ter uma dropzone com imagem e definidicoes de clique, foco e hover */
+
 .dropzone {
   border: 0.0625rem dashed var(--stroke-default);
   border-radius: 0.25rem;

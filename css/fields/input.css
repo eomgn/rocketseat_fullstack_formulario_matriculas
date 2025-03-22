@@ -1,3 +1,4 @@
+/* removendo css padrão do navegador com appearence:none e definindo algumas valores css para os inputs e select*/
 input,
 select,
 textarea {
@@ -18,6 +19,7 @@ label {
   margin-bottom: 0.25rem;
 }
 
+/* aplicando um padrão de css para quando houver foco no campo input, ou seja quando o usuario estiver clicado no campo */
 input:focus,
 select:focus,
 textarea:focus,
@@ -27,6 +29,7 @@ input[type="date"]:focus-within {
   outline-offset: 0.0625rem;
 }
 
+/*  removendo o icone padrão do input do tipo data e aplicando um novo icone */
 input[type="date"] {
   position: relative;
 
@@ -48,7 +51,7 @@ input[type="date"] {
     transform: translateY(-50%);
   }
 }
-
+/* colocando um icone no input select */
 select {
   background-image: url(../../assets/icons/arrow-down-01.svg);
   background-repeat: no-repeat;
@@ -64,12 +67,14 @@ select {
 }
 
 input {
+  /* definindo propriedades para quando o input tiver o atributo disabled */
   &[disabled] {
     background-color: var(--surface-disabled);
     border: 1px solid var(--stroke-default);
     color: var(--text-primary);
   }
 
+  /* se a tag input for seguida de uma tag small (como irmão) */
   & + small {
     display: inline-block;
     margin-top: 0.25rem;
@@ -77,10 +82,12 @@ input {
     font: var(--text-sm);
   }
 
+  /* se a tag input for do tipo invalida */
   &:invalid {
     border: 0.125rem solid var(--semantic-error);
   }
 
+  /* se a tag input tiver o atributo required e seguida de uma tag com uma classe .error (como irmão)*/
   &:required + .error {
     display: flex;
     align-items: center;
@@ -92,6 +99,7 @@ input {
     margin-top: 0.25rem;
   }
 
+  /* ao sair do foco e o valor for valido e seguida de uma tag com uma classe .error (como irmão)*/
   &:not(:focus):valid + .error {
     display: none;
   }

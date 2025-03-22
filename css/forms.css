@@ -16,6 +16,7 @@ legend {
   margin-bottom: 1.5rem;
 }
 
+/* fieldset seguido de um outro fieldset (irmão) */
 fieldset + fieldset {
   margin-top: 3rem;
 }
