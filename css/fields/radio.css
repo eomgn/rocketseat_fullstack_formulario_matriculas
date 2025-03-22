@@ -26,9 +26,10 @@ label + .radio-wrapper {
   & input,
   & input:focus,
   & input:hover {
-    /* removendo css ja aplicado em outros blocos */
+    /* removendo css ja aplicado em outros blocos e o css padrão */
     all: unset;
 
+    /* com essas propriedades o checkbox cobre todo o espaço */
     position: absolute;
     inset: 0;
   }

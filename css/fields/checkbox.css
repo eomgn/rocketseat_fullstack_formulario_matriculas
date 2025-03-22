@@ -14,7 +14,7 @@
   position: relative;
 
   & input[type="checkbox"] {
-    /* removendo css ja aplicado em outros blocos */
+    /* removendo css ja aplicado em outros blocos e o css padrão */
     all: unset;
 
     /* com essas propriedades o checkbox cobre todo o espaço */
